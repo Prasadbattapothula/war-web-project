@@ -31,7 +31,22 @@
   		<scope>provided</scope>
   	</dependency>
   </dependencies>
-  <build>
+	
+  <build<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>prasad Release Nexus Repository</name>
+	      <url>http://52.90.40.116:8081/repository/prasadrelease/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>prasad Snapshot Nexus Repository</name>
+	      <url>http://52.90.40.116:8081/repository/prasadsnapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

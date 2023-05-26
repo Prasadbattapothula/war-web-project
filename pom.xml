@@ -32,7 +32,7 @@
   	</dependency>
   </dependencies>
 	
-  <build<distributionManagement>
+  <distributionManagement>
 	
 	    <repository>
 	      <id>nexus</id>
@@ -44,9 +44,11 @@
 	      <id>nexus</id>
 	      <name>prasad Snapshot Nexus Repository</name>
 	      <url>http://52.90.40.116:8081/repository/prasadsnapshot/</url>
-	    </snapshotRepository>
-	    
+	    </snapshotRepository> 
+	  
 	</distributionManagement>
+	
+        <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
